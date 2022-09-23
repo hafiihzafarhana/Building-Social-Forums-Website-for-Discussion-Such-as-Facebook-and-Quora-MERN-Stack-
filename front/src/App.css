@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hide-scrollbar::-webkit-scrollbar{
+    display: none;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+.notifikasi-before::before{
+  content: "";
+  position: absolute;
+  border: 15px solid;
+  top: -30px;
+  right: 28px;
+  border-color: transparent transparent white transparent;
+  transform: translateX(-50%);  
+}
+
+.z-in-notif{
+  background-color: aqua;
+  z-index: 1000 !important;
+}
